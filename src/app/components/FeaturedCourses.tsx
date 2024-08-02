@@ -4,6 +4,7 @@ import courseData from "../data/music_course.json";
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { Button } from "./ui/moving-border";
 
 interface Course {
   id: number;
@@ -13,7 +14,7 @@ interface Course {
   price: number;
   instructor: string;
   isFeatured: boolean;
-  image: Url;
+  image: string;
 }
 export default function FeaturedCourses() {
   const FeaturedCourses = courseData.courses.filter(
@@ -38,6 +39,7 @@ export default function FeaturedCourses() {
             <div className="flex justify-center">
               <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+                    <img src={course.image} alt=""  className="h-20"/>
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
                     {course.title}
                   </p>
@@ -54,9 +56,9 @@ export default function FeaturedCourses() {
       <div className="mt-20 text-center">
         <Link
           href={"/courses"}
-          className="px-4 py-2 rounded border border-neutral-600 text-white-700 bg-black/[0.86]  hover:bg-gray-100 hover:text-black transition duration-200"
+          className="px-4 py-2 "
         >
-          View All courses
+         <Button className="rounded border border-neutral-600 text-white-700 bg-black/[0.86]  hover:bg-black/[0.26]   transition duration-200"> View All courses</Button>
         </Link>
       </div>
     </div>
