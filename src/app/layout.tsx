@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth focus:scroll-auto">
       
       <body className={inter.className}>
        <div className="w-full relative flex items-center justify-center">
