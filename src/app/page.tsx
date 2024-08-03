@@ -3,6 +3,7 @@ import HeroSection from "./components/ui/HeroSection";
 import FeaturedCourses from "./components/FeaturedCourses";
 import WhyChooseUs from "./components/WhyChooseUs";
 import InfiniteCardSection from "./components/InfiniteCardSection";
+import UpComingWebinars from "./components/UpComingWebinars";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <FeaturedCourses />
     <WhyChooseUs />
     <InfiniteCardSection />
+    <UpComingWebinars />
 
 
   </main>
