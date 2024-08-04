@@ -5,6 +5,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import InfiniteCardSection from "./components/InfiniteCardSection";
 import UpComingWebinars from "./components/UpComingWebinars";
 import Instructors from "./components/Instructors";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <InfiniteCardSection />
     <UpComingWebinars />
     <Instructors />
+    <Footer />
 
 
   </main>
