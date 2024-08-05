@@ -16,7 +16,7 @@ export default function Home() {
     <InfiniteCardSection />
     <UpComingWebinars />
     <Instructors />
-    <Footer />
+
 
 
   </main>
