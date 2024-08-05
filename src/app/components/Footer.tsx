@@ -1,4 +1,5 @@
 import React from 'react'
+import { TiSocialFacebook,TiSocialGithub,TiSocialLinkedin,TiSocialInstagram,TiSocialTwitter } from "react-icons/ti";
 
 export default function Footer() {
   return (
@@ -25,31 +26,59 @@ export default function Footer() {
                     </a></li>
                 <li><a href="/courses" className='hover:text-white transition-colors duration-300'>
                     Courses</a></li>
-                <li><a href="/contact" className='hover:text-white transition-colors duration-300'>
-                    Contact</a></li>
+               
             </ul>
         </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
-          <div className="flex space-x-4">
+          <div className="flex flex-col">
+            <div className='flex   items-center hover:text-white transition-colors duration-300 gap-0.6'>
+              <TiSocialFacebook size={24} />
             <a
               href="#"
-              className="hover:text-white transition-colors duration-300"
+              
             >
               Facebook
             </a>
+            </div>
+          
+            <div className="flex items-center hover:text-white transition-colors duration-300 gap-0.6">
+            <TiSocialTwitter  size={24}/>
             <a
               href="#"
-              className="hover:text-white transition-colors duration-300"
+              
             >
               Twitter
             </a>
+            </div>
+            <div className="flex items-center hover:text-white transition-colors duration-300 gap-0.6">
+            <TiSocialInstagram  size={24}/>
             <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
+              href="https://www.instagram.com/ibad_moin/"
+              target='_blank'
             >
               Instagram
             </a>
+            </div>
+           <div className="flex items-center hover:text-white hover:text-white transition-colors duration-300 gap-0.6">
+           <TiSocialGithub  size={24}/>
+           <a
+              href="https://www.github.com/ibadmoin/"
+              target='_blank'
+            >
+              Github
+            </a>
+           </div>
+           <div className="flex items-center  hover:text-white hover:text-white transition-colors duration-300 gap-0.6 ">
+           <TiSocialLinkedin  size={24}/>
+           <a
+              href="https://www.linkedin.com/in/ibad-moin-2b43a8253/"
+              target='_blank'
+              
+            >
+              Linkedin
+            </a>
+           </div>
           </div>
         </div>
         <div>
